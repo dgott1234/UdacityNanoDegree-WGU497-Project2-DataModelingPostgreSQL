@@ -21,16 +21,17 @@ As a developer on this project, I've been asked to create a Postgres database wi
 
 To optimize retrieval of our data, I've used a Star Schema with one fact table and four dimension tables. The Star Schema was chosen to help the analysts at Sparkify run faster queries on the data.
 
-**songplays** Records the log data asssociated with the Sparkify streaming events
-**users** Contains users registered with Sparkify
-**songs** Songs available for streaming on the Sparkify platform
-**artists** Artists associated with songs available on Sparkify
-**time** Timestamps of each record of songplays broken into parsed time sections for easier manipulation 
+1. **songplays** Records the log data asssociated with the Sparkify streaming events
+2. **users** Contains users registered with Sparkify
+3. **songs** Songs available for streaming on the Sparkify platform
+4. **artists** Artists associated with songs available on Sparkify
+5. **time** Timestamps of each record of songplays broken into parsed time sections for easier manipulation  
 
 ## How to run this Project
 Using the etl.ipynb notebook, scroll to the very bottom of the notebook and execute the cell that contains the following commands:
 
 %run create_tables.py
+
 %run etl.py
 
 (Note: Make sure that the kernel has been reset and that no other file is actively using the database)
